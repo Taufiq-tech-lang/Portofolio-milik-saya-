@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill & Kemampuan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+    }
+
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c7d2fe;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4f46e5;
+      margin: 40px 0 25px;
+      font-size: 28px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .skill-card {
+      background: #f9fafb;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      border: 1px solid #e5e7eb;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      border-color: #c7d2fe;
+    }
+
+    .skill-card i {
+      font-size: 45px;
+      color: #4f46e5;
+      margin-bottom: 12px;
+    }
+
+    .skill-card h3 {
+      margin: 10px 0;
+      color: #111827;
+      font-size: 20px;
+    }
+
+    .skill-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 12px;
+      min-height: 50px;
+    }
+
+    /* Progress bar */
+    .progress-bar {
+      background: #e5e7eb;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 12px;
+      margin: 5px 0 8px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #4f46e5, #6366f1);
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+
+    small {
+      font-size: 13px;
+      font-weight: bold;
+      color: #4f46e5;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 5px;
+      color: white;
+    }
+
+    .badge.beginner { background: #f97316; }
+    .badge.intermediate { background: #3b82f6; }
+    .badge.expert { background: #10b981; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Skill & Kemampuan</h1>
+    <nav>
+      <ul>
+        <li><a href="Data Diri.html">Data Diri</a></li>
+        <li><a href="Pengalaman.html">Pengalaman</a></li>
+        <li><a href="Kontak.html">Kontak</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SKILL TEKNIS -->
+    <h2>💻 Skill Teknis</h2>
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <i class="fa-solid fa-image"></i>
+        <h3>Edit Foto</h3>
+        <p>Menguasai editing foto dengan Photoshop, Canva, hingga aplikasi mobile editing.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+        <small>85%</small>
+        <div class="badge intermediate">Intermediate</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-video"></i>
+        <h3>Edit Video</h3>
+        <p>Mampu mengedit video untuk konten kreatif, dokumentasi, maupun presentasi.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+        <small>75%</small>
+        <div class="badge intermediate">Intermediate</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Dasar HTML, CSS, JavaScript untuk membuat website sederhana & portofolio.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+        <small>80%</small>
+        <div class="badge intermediate">Intermediate</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-network-wired"></i>
+        <h3>Networking</h3>
+        <p>Konfigurasi router, setting LAN, troubleshooting jaringan, & instalasi perangkat.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+        <small>80%</small>
+        <div class="badge intermediate">Intermediate</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-tools"></i>
+        <h3>Perbaikan IT</h3>
+        <p>Troubleshooting komputer, instalasi OS, perawatan hardware & software, hingga printer & CCTV.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+        <small>90%</small>
+        <div class="badge expert">Expert</div>
+      </div>
+    </div>
+
+    <!-- SOFT SKILL -->
+    <h2>🤝 Soft Skill</h2>
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <i class="fa-solid fa-people-group"></i>
+        <h3>Kerja Sama Tim</h3>
+        <p>Mudah beradaptasi, mampu berkontribusi aktif, dan solid dalam mencapai tujuan bersama.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+        <small>95%</small>
+        <div class="badge expert">Expert</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-user-tie"></i>
+        <h3>Leadership</h3>
+        <p>Memimpin kelompok kecil, mengatur pembagian tugas, serta menjaga motivasi tim.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+        <small>85%</small>
+        <div class="badge intermediate">Intermediate</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Problem Solving</h3>
+        <p>Kemampuan mencari solusi kreatif & cepat untuk berbagai tantangan teknis maupun non-teknis.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+        <small>90%</small>
+        <div class="badge expert">Expert</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-handshake"></i>
+        <h3>Kejujuran & Disiplin</h3>
+        <p>Menjunjung tinggi nilai kejujuran, bertanggung jawab, serta disiplin dalam bekerja.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 98%;"></div></div>
+        <small>98%</small>
+        <div class="badge expert">Expert</div>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-comments"></i>
+        <h3>Komunikasi</h3>
+        <p>Kemampuan komunikasi baik untuk menyampaikan ide secara jelas dan efektif.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+        <small>85%</small>
+        <div class="badge intermediate">Intermediate</div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // Animasi progress bar
+    window.addEventListener("load", () => {
+      document.querySelectorAll(".progress-fill").forEach(bar => {
+        let width = bar.style.width;
+        bar.style.width = "0";
+        setTimeout(() => bar.style.width = width, 300);
+      });
+    });
+
+    // 🔒 Anti salin teks
+    document.addEventListener("contextmenu", e => e.preventDefault());
+    document.addEventListener("copy", e => e.preventDefault());
+    document.addEventListener("cut", e => e.preventDefault());
+    document.addEventListener("selectstart", e => e.preventDefault());
+
+    // 🔒 Anti screenshot & rekam layar (efek redup + peringatan)
+    setInterval(() => {
+      if (navigator.userAgent.includes("HeadlessChrome")) {
+        document.body.innerHTML = "<h1 style='color:red;text-align:center;margin-top:20%;'>🚫 Screenshot / Rekam Layar Terdeteksi!</h1>";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

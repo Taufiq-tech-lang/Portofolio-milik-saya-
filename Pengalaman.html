@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengalaman</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; /* cegah seleksi teks */
+    }
+
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4f46e5;
+    }
+
+    p.intro {
+      text-align: justify;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 20px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #4f46e5;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 15px;
+      height: 15px;
+      background: #4f46e5;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px white;
+    }
+
+    .timeline-item.left::before {
+      right: -8px;
+    }
+
+    .timeline-item.right::before {
+      left: -8px;
+    }
+
+    .timeline-content {
+      background: #f3f4f6;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .timeline-content h3 {
+      margin-top: 0;
+      color: #4f46e5;
+    }
+
+    .timeline-content p {
+      margin: 8px 0;
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    /* Watermark overlay */
+    .watermark {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9998;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .watermark span {
+      font-size: 32px;
+      color: rgba(0,0,0,0.08);
+      transform: rotate(-20deg);
+      user-select: none;
+    }
+
+    /* Flash overlay saat deteksi PrintScreen */
+    .ps-flash {
+      position: fixed;
+      inset: 0;
+      background: white;
+      z-index: 9999;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pengalaman</h1>
+    <nav>
+      <ul>
+        <li><a href="Data Diri.html">Data Diri</a></li>
+        <li><a href="Skill.html">Skill & Kemampuan</a></li>
+        <li><a href="Kontak.html">Kontak</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Perjalanan Pengalaman Saya</h2>
+    <p class="intro">
+      Walaupun saya belum memiliki pengalaman kerja langsung di dunia profesional, saya berkesempatan mengikuti 
+      <strong>magang di CV Aztek Media</strong> selama <strong>6 bulan</strong>. 
+      Magang ini menjadi pengalaman berharga, karena saya belajar banyak hal mulai dari perbaikan perangkat 
+      komputer, instalasi sistem, hingga menghadapi klien yang datang dengan berbagai macam masalah IT. 
+      Dari pengalaman itu saya semakin yakin bahwa dunia teknologi adalah bidang yang ingin saya tekuni.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3><i class="fa-solid fa-laptop-code"></i> Perbaikan Laptop & Komputer</h3>
+          <p>Saya menangani masalah perangkat seperti kerusakan RAM, harddisk, dan motherboard. 
+             Selain itu, saya juga melakukan instalasi ulang sistem operasi, pembersihan virus, dan optimasi performa 
+             agar perangkat kembali bekerja secara maksimal.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3><i class="fa-solid fa-print"></i> Perbaikan & Perawatan Printer</h3>
+          <p>Saya belajar memperbaiki printer dengan kendala seperti paper jam, error cartridge, dan cleaning head tinta. 
+             Saya juga memahami pentingnya perawatan rutin agar printer lebih awet dan jarang bermasalah.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3><i class="fa-solid fa-network-wired"></i> Jaringan Internet</h3>
+          <p>Ikut membantu setting router, konfigurasi LAN, hingga troubleshooting masalah seperti IP conflict 
+             dan perangkat yang tidak bisa terhubung ke jaringan.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3><i class="fa-solid fa-video"></i> Instalasi CCTV</h3>
+          <p>Ikut dalam pemasangan kamera CCTV, penarikan kabel, pengaturan DVR, serta memastikan sistem bisa 
+             diakses dari jarak jauh melalui smartphone.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3><i class="fa-solid fa-microchip"></i> Perawatan Hardware</h3>
+          <p>Membantu perawatan hardware seperti membersihkan bagian dalam PC, mengganti thermal paste, 
+             dan melakukan penggantian komponen yang rusak agar perangkat lebih awet.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3><i class="fa-solid fa-gears"></i> Perawatan Software</h3>
+          <p>Menangani instalasi aplikasi, update sistem, optimasi kinerja, hingga membersihkan malware 
+             yang memperlambat perangkat klien.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3><i class="fa-solid fa-plug"></i> Perangkat IT Lain</h3>
+          <p>Selain itu, saya juga terlibat dalam pengaturan proyektor, perawatan server kecil, 
+             hingga instalasi software tambahan sesuai kebutuhan klien.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Disable klik kanan
+    document.addEventListener("contextmenu", e => e.preventDefault());
+
+    // Disable shortcut copy, paste, devtools, printscreen
+    document.addEventListener("keydown", e => {
+      if ((e.ctrlKey && ["c","u","s","p","x","a"].includes(e.key.toLowerCase())) ||
+          e.key === "F12") {
+        e.preventDefault();
+      }
+      if (e.key === "PrintScreen") {
+        e.preventDefault();
+        let ps = document.getElementById("psFlash");
+        ps.style.display = "block";
+        setTimeout(()=> ps.style.display="none", 200);
+      }
+    });
+
+    // Disable copy event
+    document.addEventListener("copy", e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(""); 
+    });
+  </script>
+</body>
+</html>.

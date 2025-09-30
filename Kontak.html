@@ -1,0 +1,276 @@
+<!DOCTYPE html>  
+<html lang="id">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Kontak</title>  
+  <link rel="stylesheet" href="style.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+  <style>  
+    body {  
+      font-family: Arial, sans-serif;  
+      margin: 0;  
+      padding: 0;  
+      background: #f9f9f9;  
+    }  
+  
+    header {  
+      background: #4f46e5;  
+      color: white;  
+      padding: 15px;  
+      text-align: center;  
+    }  
+  
+    nav ul {  
+      list-style: none;  
+      padding: 0;  
+      margin: 10px 0 0 0;  
+      display: flex;  
+      justify-content: center;  
+      flex-wrap: wrap;  
+      gap: 15px;  
+    }  
+  
+    nav ul li a {  
+      color: white;  
+      text-decoration: none;  
+      font-weight: bold;  
+    }  
+  
+    main.kontak {  
+      max-width: 900px;  
+      margin: 20px auto;  
+      padding: 20px;  
+      background: white;  
+      border-radius: 12px;  
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
+    }  
+  
+    .info-kontak {  
+      display: flex;  
+      flex-direction: column;  
+      gap: 12px;  
+      margin-bottom: 25px;  
+    }  
+  
+    .info-kontak p {  
+      margin: 0;  
+      font-size: 15px;  
+      display: flex;  
+      align-items: center;  
+      gap: 10px;  
+      padding: 10px 12px;  
+      border: 1px solid #ddd;  
+      border-radius: 8px;  
+      background: #f9fafb;  
+      transition: 0.3s;  
+      word-break: break-word;  
+    }  
+  
+    .info-kontak p:hover {  
+      background: #eef2ff;  
+      border-color: #4f46e5;  
+    }  
+  
+    .info-kontak i {  
+      color: #4f46e5;  
+      font-size: 18px;  
+      width: 22px;  
+      text-align: center;  
+      flex-shrink: 0;  
+    }  
+  
+    .map {  
+      margin-top: 20px;  
+      border-radius: 12px;  
+      overflow: hidden;  
+    }  
+  
+    .map iframe {  
+      width: 100%;  
+      height: 300px;  
+      border: 0;  
+    }  
+  
+    form {  
+      display: flex;  
+      flex-direction: column;  
+      gap: 10px;  
+    }  
+  
+    input, textarea {  
+      padding: 10px;  
+      border: 1px solid #ddd;  
+      border-radius: 8px;  
+      font-size: 14px;  
+    }  
+  
+    button {  
+      padding: 10px;  
+      border: none;  
+      background: #4f46e5;  
+      color: white;  
+      font-weight: bold;  
+      border-radius: 8px;  
+      cursor: pointer;  
+    }  
+  
+    button:hover {  
+      background: #3730a3;  
+    }  
+  
+    .comments {  
+      margin: 20px 0;  
+      padding: 15px;  
+      background: #f3f4f6;  
+      border-radius: 8px;  
+    }  
+  
+    .comment {  
+      padding: 10px;  
+      border-bottom: 1px solid #ddd;  
+    }  
+  
+    .comment:last-child {  
+      border-bottom: none;  
+    }  
+  
+    .comment strong {  
+      color: #4f46e5;  
+    }  
+  
+    @media (max-width: 768px) {  
+      header h1 {  
+        font-size: 20px;  
+      }  
+      nav ul {  
+        gap: 10px;  
+      }  
+      main.kontak {  
+        padding: 15px;  
+      }  
+      .info-kontak p {  
+        font-size: 14px;  
+        padding: 8px 10px;  
+      }  
+      .map iframe {  
+        height: 220px;  
+      }  
+    }  
+  
+    @media (max-width: 480px) {  
+      header h1 {  
+        font-size: 18px;  
+      }  
+      nav ul li a {  
+        font-size: 14px;  
+      }  
+      input, textarea, button {  
+        font-size: 13px;  
+      }  
+    }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <h1>Kontak Saya</h1>  
+    <nav>  
+      <ul>  
+        <li><a href="Data Diri.html">Data Diri</a></li>  
+        <li><a href="Pengalaman.html">Pengalaman</a></li>  
+        <li><a href="Skill.html">Skill & Kemampuan</a></li>  
+        <li><a href="index.html">Home</a></li>  
+      </ul>  
+    </nav>  
+  </header>  
+  
+  <main class="kontak">  
+    <h2>Informasi Kontak</h2>  
+    <div class="info-kontak">  
+      <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> mynameistaufiqurrahman@gmail.com</p>  
+      <p><i class="fa-solid fa-phone"></i> <strong>Telepon:</strong> 089516355656</p>  
+      <p><i class="fa-brands fa-instagram"></i> <strong>Instagram:</strong> @tfq_0</p>  
+      <p><i class="fa-brands fa-youtube"></i> <strong>YouTube:</strong> @tfq_0</p>  
+      <p><i class="fa-brands fa-github"></i> <strong>GitHub:</strong> github.com/Taufiq_tech_lang</p>  
+      <p><i class="fa-solid fa-location-dot"></i> <strong>Alamat:</strong> Rumah Bu Marwati, Desa Gowak, RT.06 RW.02, Grabag, Magelang</p>  
+    </div>  
+  
+    <div class="map">  
+      <iframe  
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197.67919131090363!2d110.32053618631931!3d-7.372610753456735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8181ec9c477d%3A0xd873d30507f49c16!2sRumah%20Bu%20Marwati%2C%20Desa%20Gowak%2C%20RT.06%2C%20RW.02%2C%20Grabag%2C%20Kabupaten%20Magelang%2C%20Jawa%20Tengah%2056196!5e0!3m2!1sid!2sid!4v1695639830000!5m2!1sid!2sid"  
+        allowfullscreen=""  
+        loading="lazy"  
+        referrerpolicy="no-referrer-when-downgrade">  
+      </iframe>  
+    </div>  
+  
+    <h2>Kirim Pesan</h2>  
+    <form id="commentForm">  
+      <input type="text" id="name" placeholder="Nama Anda" required>  
+      <input type="email" id="email" placeholder="Email Anda" required>  
+      <textarea id="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>  
+      <button type="submit">Kirim</button>  
+      <h2>Komentar</h2>  
+      <div class="comments" id="comments"></div>  
+    </form>  
+  </main>  
+  
+  <script>  
+    const commentForm = document.getElementById("commentForm");  
+    const commentsDiv = document.getElementById("comments");  
+  
+    let comments = JSON.parse(localStorage.getItem("comments")) || [];  
+  
+    function displayComments() {  
+      commentsDiv.innerHTML = "";  
+      comments.forEach(c => {  
+        const div = document.createElement("div");  
+        div.classList.add("comment");  
+        div.innerHTML = `<strong>${c.name}</strong> (${c.email})<br>${c.message}`;  
+        commentsDiv.appendChild(div);  
+      });  
+    }  
+    displayComments();  
+  
+    commentForm.addEventListener("submit", function(e) {  
+      e.preventDefault();  
+      const name = document.getElementById("name").value;  
+      const email = document.getElementById("email").value;  
+      const message = document.getElementById("message").value;  
+  
+      const newComment = { name, email, message };  
+      comments.push(newComment);  
+  
+      localStorage.setItem("comments", JSON.stringify(comments));  
+      displayComments();  
+      commentForm.reset();  
+    });  
+  
+    /* ==== Script Anti Screenshot / Rekam Layar / Copy ==== */  
+    // Blok klik kanan  
+    document.addEventListener("contextmenu", e => e.preventDefault());  
+    // Blok tombol copy + cut + paste  
+    document.addEventListener("copy", e => e.preventDefault());  
+    document.addEventListener("cut", e => e.preventDefault());  
+    document.addEventListener("paste", e => e.preventDefault());  
+    // Blok tombol PrintScreen  
+    document.addEventListener("keyup", function(e) {  
+      if (e.key === "PrintScreen") {  
+        navigator.clipboard.writeText("");  
+        alert("Screenshot dinonaktifkan di halaman ini!");  
+      }  
+    });  
+    // Blok shortcut rekam layar (DevTools / inspect)  
+    document.addEventListener("keydown", function(e) {  
+      if (e.ctrlKey && (e.key === "u" || e.key === "U")) {  
+        e.preventDefault();  
+        alert("View Source dinonaktifkan!");  
+      }  
+      if (e.ctrlKey && e.shiftKey && (e.key === "i" || e.key === "I")) {  
+        e.preventDefault();  
+        alert("Inspect Element dinonaktifkan!");  
+      }  
+    });  
+  </script>  
+</body>  
+</html>

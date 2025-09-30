@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Diri</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; /* cegah seleksi teks */
+    }
+
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main.data-diri {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .data-table th {
+      background: #f3f4f6;
+      width: 250px;
+    }
+
+    .intro {
+      line-height: 1.8;
+      text-align: justify;
+    }
+    .profile-pic {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .profile-pic img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #4f46e5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      -webkit-user-drag: none;
+      user-drag: none; /* cegah drag foto */
+    }
+    .intro-box {
+      border: 2px solid #4f46e5;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+      background: #fafafa;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .intro-box h2 {
+      margin-top: 0;
+      text-align: center;
+      color: #4f46e5;
+    }
+
+    /* Watermark overlay */
+    .watermark {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9998;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .watermark span {
+      font-size: 32px;
+      color: rgba(0,0,0,0.08);
+      transform: rotate(-20deg);
+      user-select: none;
+    }
+
+    /* Flash overlay saat deteksi PrintScreen */
+    .ps-flash {
+      position: fixed;
+      inset: 0;
+      background: white;
+      z-index: 9999;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Data Diri Saya</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>    
+        <li><a href="Pengalaman.html">Pengalaman</a></li>
+        <li><a href="Skill.html">Skill & Kemampuan</a></li>
+        <li><a href="Kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="profile-pic">
+    <img src="7.jpg" alt="Foto Profil">
+  </div>
+
+  <main class="data-diri">
+    <h2>Data Diri</h2>
+    <table class="data-table">
+      <tr><th>Nama</th><td>Muhammad Taufiqqurahman</td></tr>
+      <tr><th>Tempat, Tanggal Lahir</th><td>Semarang, 06 Maret 2007</td></tr>
+      <tr><th>Pendidikan Terakhir</th><td>SMK (Sekolah Menengah Kejurusan)</td></tr>
+      <tr><th>Nama Institut</th><td>SMK Texmaco Semarang</td></tr>
+      <tr><th>Jurusan</th><td>TKJ (Teknik Komputer dan Jaringan)</td></tr>
+      <tr><th>Jenis Kelamin</th><td>Laki-laki</td></tr>
+      <tr><th>Alamat</th><td>Gowak, Grabag, Magelang, RT 6 RW 2</td></tr>
+      <tr><th>Agama</th><td>Islam</td></tr>
+      <tr><th>Pengalaman Bekerja</th><td>Fresh Graduate</td></tr>
+      <tr><th>Hobi</th><td>Coding</td></tr>
+    </table>
+
+    <div class="intro-box">
+      <h2>Perkenalan Diri</h2>
+      <div class="intro">
+        <p>Baik, sebelumnya izinkan saya memperkenalkan diri. Nama saya <strong>Muhammad Taufiqqurahman</strong>, saya lahir di Semarang pada tanggal 6 Maret 2007. Saat ini saya telah menyelesaikan pendidikan di <strong>SMK Texmaco Semarang</strong> dengan jurusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong>.</p>
+        <p>Saya adalah seorang <em>fresh graduate</em> yang memiliki minat besar pada dunia teknologi, khususnya dalam bidang jaringan komputer dan pemrograman. Sejak duduk di bangku sekolah, saya aktif mengembangkan keterampilan di bidang <strong>coding</strong> sebagai hobi sekaligus bekal untuk masa depan.</p>
+        <p>Sebagai pribadi, saya memiliki motivasi tinggi untuk terus belajar dan berkembang. Latar belakang pendidikan di bidang TKJ telah memberikan saya dasar yang kuat dalam memahami infrastruktur jaringan, troubleshooting, serta pengelolaan perangkat komputer. Di sisi lain, hobi saya dalam pemrograman membantu saya untuk lebih kreatif dalam menciptakan solusi dan inovasi.</p>
+        <p>Saya tinggal di <strong>Gowak, Grabag, Magelang</strong>. Dengan dukungan pendidikan, keterampilan, serta semangat belajar yang saya miliki, saya berharap dapat berkontribusi positif baik dalam dunia kerja maupun dalam pengembangan diri di masa depan.</p>
+        <p>Demikian perkenalan singkat saya. Besar harapan saya agar pengalaman, pengetahuan, dan keterampilan yang saya miliki dapat membuka peluang untuk bekerja sama secara profesional ke depannya.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Watermark -->
+
+  <script>
+    // Disable klik kanan
+    document.addEventListener("contextmenu", e => e.preventDefault());
+
+    // Disable shortcut copy, paste, devtools, printscreen
+    document.addEventListener("keydown", e => {
+      if ((e.ctrlKey && ["c","u","s","p","x","a"].includes(e.key.toLowerCase())) ||
+          e.key === "F12") {
+        e.preventDefault();
+      }
+      if (e.key === "PrintScreen") {
+        e.preventDefault();
+        let ps = document.getElementById("psFlash");
+        ps.style.display = "block";
+        setTimeout(()=> ps.style.display="none", 200);
+      }
+    });
+
+    // Disable copy event
+    document.addEventListener("copy", e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(""); 
+    });
+  </script>
+</body>
+</html>
